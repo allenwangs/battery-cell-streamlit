@@ -39,7 +39,7 @@ st.markdown(markdown_text)
 
 st.subheader("Select one file to check raw data")
 
-@st.experimental_memo(ttl=600)
+@st.experimental_memo()
 def get_file_list():
 
     sql = """
@@ -140,7 +140,7 @@ with col6:
 st.title("Discharge Capacity Over Cycle")
 
 
-@st.experimental_memo(ttl=600)
+@st.experimental_memo()
 def plot_discharge_capacity_over_cycle():
 
 
@@ -218,7 +218,7 @@ st.title("Change in Voltage Curve")
 
 col7, col8 = st.columns(2)
 
-@st.experimental_memo(ttl=600)
+@st.experimental_memo()
 def plot_discharge_capacity_diff_100_10():
 
     # Fig2
@@ -303,7 +303,7 @@ def plot_discharge_capacity_diff_100_10():
 
 plot_discharge_capacity_diff_100_10()
 
-@st.experimental_memo(ttl=600)
+@st.experimental_memo()
 def plot_voltage_curve_variance():
 
     # Fig4
