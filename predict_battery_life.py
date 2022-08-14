@@ -400,4 +400,6 @@ def plot_voltage_curve_variance():
     with col8:
         st.plotly_chart(fig4, use_container_width=False)
 
+
 plot_voltage_curve_variance()
+
