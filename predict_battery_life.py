@@ -181,7 +181,7 @@ def plot_discharge_capacity_over_cycle():
     remove_outliers as (
         select *
         from join_end_of_life
-        where discharge_capacity < 1.5
+        where discharge_capacity < 1.15
         and discharge_capacity > 0.85
     ),
     
