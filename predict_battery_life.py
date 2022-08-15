@@ -290,7 +290,7 @@ def plot_discharge_capacity_diff_100_10():
 
     fig2 = px.scatter(df_fig2, x="discharge_capacity_diff_100_10", y="voltage",
                      color='cycle_index_end_of_life', color_continuous_scale='RdBu',
-                     width=500, height=400,
+                     width=600, height=500,
                      labels={
                          "discharge_capacity_diff_100_10": "Q_100 - Q_10 (Ah)",
                          "voltage": "Voltage (V)",
@@ -387,7 +387,7 @@ def plot_voltage_curve_variance():
     fig4 = px.scatter(df_variance, x="voltage_curve_variance", y="cycle_index_end_of_life",
                       log_x=True, log_y=True,
                       color='cycle_index_end_of_life', color_continuous_scale='RdBu',
-                      width=500, height=400,
+                      width=600, height=500,
                       labels={
                           "voltage_curve_variance": "Var(Q_100 - Q_10(V))",
                           "cycle_index_end_of_life": "Cycle life"
